@@ -1,0 +1,387 @@
+/* ---------------------
+common styles goes here
+----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Slabo+27px&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Slabo 27px', serif;
+}
+
+
+p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+}
+
+/* ------------
+common styles end
+-------------- */
+
+header {
+    margin-top: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 120px;
+    margin-right: 120px;
+    align-items: center;
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #3A3A3A;
+}
+
+.menu a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #3A3A3A;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-infos {
+    width: 582px;
+    height: 270px;
+    margin-left: 120px;
+    margin-right: 119px;
+}
+
+.banner-infos h1 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 70px;
+}
+
+.prebook {
+    width: 196px;
+    height: 44px;
+    margin-top: 16.1px;
+    border: none;
+    border-radius: 41px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.banner-image {
+    background: url('../images/Circle\ design.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 440px;
+    height: 414px;
+    margin-top: 70px;
+    margin-right: 179px;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------
+brand section start
+--------------------------------------------------------------------------------------------------------------- */
+.brand-container {
+    margin-top: 69px;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+hr {
+    background-color: #AAAAAA;
+    opacity: .3;
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand a {
+    padding: 30px 40px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------
+popular section start
+--------------------------------------------------------------------------------------------------------------- */
+
+.popular-container {
+    margin-top: 80px;
+    margin-left: 195px;
+    margin-right: 198px;
+}
+
+.popular-container h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+
+.populars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+}
+
+.popular {
+    width: 329px;
+    height: 476px;
+    padding: 10px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.popular img {
+    width: 100%;
+}
+
+.popular h2 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+    padding: 5px 0;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    color: orange;
+}
+
+.price {
+    padding-bottom: 3px;
+}
+
+.shifting,
+.status,
+.buyer {
+    font-size: 14px;
+    line-height: 20px;
+    color: #787885;
+}
+
+.popular-container a {
+    text-decoration: none;
+    color: #E02C6D;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.feature-container {
+    margin-top: 80px;
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+.featured {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.featured-image {
+    background: url('../images/gear.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 404px;
+    height: 270px;
+    margin-right: 96px;
+}
+
+.feature-info h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 16px;
+}
+
+.feature-info p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 16px;
+    margin-right: 274px;
+}
+
+.join-now {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.copyright {
+    color: white;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media i {
+    padding: 20px 10px;
+}
+
+/* --------------------------------------------------------------------------------------
+media query goes here
+----------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 736px) {
+    body {
+        margin: 10px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-infos {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-image {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .brand-container hr {
+        display: none;
+    }
+
+    .brand {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 10px;
+        column-gap: 20px;
+        width: 100%;
+        margin: 10px 10px;
+    }
+
+    .brand a {
+        padding: 0;
+    }
+
+    .brand a img {
+        width: 50px;
+    }
+
+    .popular-container {
+        margin: 5px 0 0 0;
+    }
+
+    .popular-container h1 {
+        margin-top: 50px;
+        line-height: 0;
+    }
+
+
+    .populars {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    
+    .popular {
+       width: 100%;
+       height: 100%;
+    }
+
+    .popular img {
+        width: 100%;
+    }
+
+    .popular-container a {
+        line-height: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .feature-container {
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .featured {
+        flex-direction: column-reverse;
+    }
+
+    .feature-info {
+        text-align: center;
+    }
+
+    .feature-info h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .feature-info p {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .join-now {
+        margin-bottom: 25px;
+    }
+
+    .featured-image {
+        margin-right: 0;
+    }
+
+}
